@@ -1,0 +1,101 @@
+.desaparece{
+    display: none;
+}
+
+#alertaErro{
+        position: absolute;
+        right: 300px;
+        bottom: 650px;
+        width: 450px;
+        background-color: #f8d7dac3;
+        font-family: 'Inter', sans-serif;
+}
+
+#alertaErro li{
+    list-style: none;
+    padding-top: 20px;
+}
+#resultados{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 20px;
+}
+
+#cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.navbar-brand{
+    padding: 20px;
+    font-size: 40px;
+}
+
+.form-group{
+    font-size: 15px;
+    padding: 5px;
+    color: rgb(209, 209, 209);
+    font-family: 'Inter', sans-serif;
+}
+#Nome label{
+    padding-top: 40px;
+}
+.form-group label{
+    padding-bottom: 5px;
+    
+}
+
+.form-group input{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px 0px 20px 10px;
+    height: 60px;
+    width: 300px;
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 5px;
+}
+
+input[type=date]::-webkit-datetime-edit {
+    color: rgb(187, 187, 187)
+}
+::placeholder{
+    color: rgb(187, 187, 187)
+}
+
+select{
+    height: 40px;
+    width: 200px;
+    margin-bottom: 2px;
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    color:rgb(145, 145, 145)
+}
+
+.cadastrarButton{
+    background-color: #5dc490;
+    height: 50px;
+    width: 300px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.cadastrarButton:hover{
+    background-color:rgb(63, 163, 113);
+}
+
+.erroInput{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 180, 180) !important;
+}
+.erroInput::placeholder{
+    color: rgb(255, 155, 155) !important;
+}
+
+.erroInput[type=date]::-webkit-datetime-edit{
+    color: rgb(255, 155, 155) !important; 
+}

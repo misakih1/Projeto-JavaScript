@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dever da aula22</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+rel="stylesheet"
+integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Cadastro</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"> <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#"></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <main class="container-fluid">
+        <section>
+            <form id="cards">
+                <div class="form-group">
+                    <div>
+                        <label>Opções</label>
+                    </div>
+                    <select id="selectTipo" onchange="exibeForm()">
+                        <option value="professores">Professores</option>
+                        <option value="alunos">Alunos</option>
+                        <option value="turmas">Turmas</option>
+                        </select>
+                </div>
+
+                <div class="form-group" id="Nome">
+                    <div>
+                        <label>Nome:</label>
+                    </div>
+                    <input type="text"  placeholder="Nome" id="inputNome">
+                </div>
+
+                <div class="form-group" id="Sobrenome">
+                    <div>
+                        <label>Sobrenome:</label>
+                    </div>
+                    <input type="text" placeholder="Sobrenome" id="inputSobrenome">
+                </div>
+                
+                <div class="form-group" id="Nascimento">
+                    <div>
+                        <label>Nascimento:</label>
+                    </div>
+                    <input type="date" placeholder="Nascimento" id="inputNascimento">
+                </div>
+
+                <div class="form-group" id="Idade">
+                    <div>
+                        <label>Idade:</label>
+                    </div>
+                    <input type="text" placeholder="Idade" id="inputIdade">
+                </div>
+
+                <div class="form-group" id="Experiencia">
+                    <div>
+                        <label>Experiência:</label>
+                    </div>
+                    <input type="text" placeholder="Experiência" id="inputExperiencia">
+                </div>
+
+                <div class="form-group" id="Especialidade">
+                    <div>
+                        <label>Especialidade:</label>
+                    </div>
+                    <input type="text" placeholder="Especialidade" id="inputEspecialidade">
+                </div>
+
+                <div class="form-group desaparece" id="Curso">
+                    <div>
+                        <label>Curso:</label>
+                    </div>
+                    <input type="text" placeholder="Curso" id="inputCurso">
+                </div>
+
+                <div class="form-group desaparece" id="Turno">
+                    <div>
+                        <label>Turno:</label>
+                    </div>
+                    <input type="text" placeholder="Turno" id="inputTurno">
+                </div>
+                <hr>
+
+                <button type="button" class="cadastrarButton" onclick="validar()">Cadastrar</button>
+            </form>
+
+            <div id="alertaErro" class="desaparece" role="alert">
+                <ul id="listaErro"></ul>        
+             </div>
+        </section>
+        <section>
+            <h4>Resultados: </h4>
+            <div id="resultados"></div>
+        </section>
+        
+    </main>
+   
+
+    <script src="js/js.js"></script>
+</body>
+</html>
